@@ -1,10 +1,10 @@
-:root{
-	--accent-color:#28A745;
-	--animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+:root {
+  --accent-color: #28a745;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-body{
-	font-family: 'Open Sans', sans-serif;
-	color: #333333;
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
 }
 h1,
 h2,
@@ -12,78 +12,104 @@ h3,
 h4,
 h5,
 h6,
-p{
-	margin-top: 0;
-	margin-bottom: 0;
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 ul,
-ol{
-	padding-left: 0;
-	margin-top: 0;
-	margin-bottom: 0;
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-img{
-	display: block;
+img {
+  display: block;
 }
-.link{
-	text-decoration: none;
+.link {
+  text-decoration: none;
 }
-.list{
-	list-style: none;
+.list {
+  list-style: none;
 }
-.container{
-	max-width: 1360px;
-	margin-right: auto;
-	margin-left: auto;
+.container {
+  max-width: 1360px;
+  margin-right: auto;
+  margin-left: auto;
 }
-button{
-	cursor: pointer;
+button {
+  cursor: pointer;
 }
 /*========================HEADER=====================*/
-.header{
-	left: 50%;
-	transform: translate(-50%);
-	position: absolute;
+@media screen and (min-width: 320px) {
+  .header {
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+  }
+  .header-container {
+    display: block;
+    padding: 20px 24px 0px 24px;
+  }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.21;
+    color: #ffffff;
+  }
+  .header-logo-item {
+    fill: var(--accent-color);
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+    padding-right: 9px;
+  }
+  .header-text-logo {
+    color: var(--accent-color);
+  }
+  .header-list {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .header-link {
+    color: #ffffff;
+    transition: color var(--animation);
+  }
 }
+/*
 .header-container{
 	display: flex;
 	justify-content: space-between;
-	padding: 12px 24px 0px 24px;
+	padding-top: 12px;
 }
 .header-logo{
-	display: flex;
-	align-items: center;
-	font-weight: 400;
+	
 	font-size: 35px;
-	line-height: 1.21;
-	color: #FFFFFF;
+	
 }
-.header-logo-item{
-	fill: var(--accent-color);
-	width: 50px;
-	height: 50px;
-	padding-top: 5px;
-	padding-right: 9px;
-}
-.header-text-logo{
-	color: var(--accent-color);
-}
+
+
 .header-list{
-	display: flex;
+	
 	gap: 40px;
-	align-items: center;
+	
 }
-.header-link{
-	color: #FFFFFF;
-	transition: color var(--animation);
-}
+
 .header-link:hover,
 .header-link:focus{
 	color: var(--accent-color);
-}
+} */
 
 /*========================HERO=====================*/
-.hero{
+@media screen (min-width:768px){
+	.hero{
+		
+	}
+}
+/* .hero{
 	padding-top: 230px;
 	padding-bottom: 282px;
 	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg-desktop.jpg);
@@ -133,9 +159,9 @@ button{
 	background-repeat: no-repeat;
 	background-size: 9px 18px;
 	background-position: center;
-}
+} */
 /*========================green-container=====================*/
-.green-container{
+/* .green-container{
 	display: flex;
 	background-color: var(--accent-color);
 	color: #FFFFFF;
@@ -198,9 +224,9 @@ button{
 .color-btn-blue:focus,
 .color-btn-blue:hover{
 	background-color: var(--accent-color);
-}
+} */
 /*========================b=====================*/
-.content-container{
+/* .content-container{
 	text-align: center;
 	padding-bottom: 80px;
 	padding-top: 80px;
@@ -226,21 +252,20 @@ button{
 }
 .cases-list-item:hover{
 	transform: scale(1.05);
-}
+} */
 /*========================blue-container=====================*/
-.blue-container{
+/* .blue-container{
 	display: flex;
 	background-color: #0284D0;
 	color: #FFFFFF;
-/*	justify-content: space-between;*/
 }
 .blue-container-item{
 	margin-left: 28px;
 	padding-top: 80px;
 	margin-right: 56px;
-}
+} */
 /*========================b=====================*/
-.team-list{
+/* .team-list{
 	display: flex;
 	justify-content: center;
 	gap:20px;
@@ -292,10 +317,10 @@ button{
 .focus-item:focus,
 .focus-item:hover{
 	fill: var(--accent-color);
-}
+} */
 
 /*========================callback=====================*/
-.callback-container{
+/* .callback-container{
 	display: flex;
 	background-color: #f4f4f4;
 
@@ -337,9 +362,9 @@ button{
 .callback-btn:focus,
 .callback-btn:hover{
 	background-color: #0284D0 ;
-}
+} */
 /*========================footer=====================*/
-.container-footer{
+/* .container-footer{
 	background: #333333;
 }
 .footer-list{
@@ -365,4 +390,4 @@ button{
 }
 .footer-list-item:not(:last-child) {
 	margin-right: 25px;
-}
+} */
